@@ -1,0 +1,36 @@
+
+.grille-mix{
+  display: flex;
+  %col{
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+    padding: 0 $gutter-width*0.5;
+    &.color{
+      background-color: #808080;
+    }
+    @media screen and (max-width: $mobil){
+      flex-direction:column;
+    }
+  }
+  @for $i from 1 through $columns{
+    .col-#{$i}{
+      @extend %col;
+      width: $i/$columns*100%;
+    }
+  }
+
+  @media screen and (max-width: $mobil){
+    @for $i from 1 through $columns{
+      .col-#{$i}{
+        width:100%;
+      }
+    }
+  }
+}
+
+/**@mixin grid-unit($span) {
+  float: left;
+  margin-right: $gutter-width;
+  width: ($column-width * $span) + ($gutter-width * ($span - 1));
+}**/

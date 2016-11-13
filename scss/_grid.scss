@@ -1,0 +1,97 @@
+.grid-float{
+  border: 2px solid #c3c3c3;
+  border-radius: 5px;
+  .row {
+  	width : 100%;
+    clear : both ;
+    &::before, &::after{
+      content: "";
+      display: table;
+    }
+    &::after{
+      clear: both;
+    }
+    &>div{
+      box-sizing: border-box;
+      text-align: center;
+      background-color: grey;
+      padding: 10px 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 2%;
+      &:nth-last-of-type(1){
+        margin-right: 0;
+      }
+    }
+    .span-1 {
+      float: left;
+      width : 10.75%;
+    }
+    .span-2 {
+      float: left;
+      width : 23.5%;
+    }
+    .span-3 {
+      float: left;
+      width : 36.25%;
+    }
+    .span-4 {
+      float: left;
+      width : 49%;
+    }
+    .span-5 {
+      float: left;
+      width : 61.75%;
+    }
+    .span-6 {
+      float: left;
+      width : 74.5%;
+    }
+    .span-7 {
+      float: left;
+      width : 87.25%;
+    }
+    .span-8 {
+      float: left;
+      width : 100%;
+    }
+  //----------------------------------------------------------------------
+    .offset-1{
+      margin-left: 12.75%;
+      float: left;
+    }
+    .offset-2{
+      margin-left: 25.5%;
+      float: left;
+    }
+    .offset-3{
+      margin-left: 38.25%;
+      float: left;
+    }
+    .offset-4{
+      margin-left: 51%;
+      float: left;
+    }
+    .offset-5{
+      margin-left: 63.75%;
+      float: left;
+    }
+    .offset-6{
+      margin-left: 76.5%;
+      float: left;
+    }
+    .offset-7{
+      margin-left: 89.25%;
+      float: left;
+    }
+  }
+}
+
+.grid-flex{
+  .row{
+    display: flex;
+  }
+}
+
+.clear { clear : both ; }
+@import "gridmixin"

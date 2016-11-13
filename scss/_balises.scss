@@ -1,0 +1,140 @@
+h1{
+  font-size: 2em;
+  small{
+    font-size: 80%;
+  }
+}
+
+h2{
+  font-size: 1.5em;
+  small{
+    font-size: 80%;
+  }
+}
+h3{
+  font-size: 1.17em;
+  small{
+    font-size: 80%;
+  }
+}
+h4{
+  font-size: 1em;
+  small{
+    font-size: 80%;
+  }
+}
+h5{
+  font-size: 0.83em;
+  small{
+    font-size: 80%;
+  }
+}
+h6{
+  font-size: 0.67em;
+  small{
+    font-size: 80%;
+  }
+}
+
+p{
+  font-style:inherit;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+mark, del, ins, u, strong, em, abbr{
+  font-size: 110%;
+}
+
+
+blockquote {
+  font-style: italic;
+  margin: 0.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D";
+}
+blockquote:before {
+  color: darken(#F1F1F1, 20);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
+}
+
+code{
+  margin:5px;
+	font-family: Courier;
+	background-color: $backgroundCode;
+	color: $colorCode;
+	padding:5px 10px;
+  display: block;
+  @media screen and (max-width: $mobil){
+    display: none;
+    //Choix arbitraire de ma part car je trouve que c'est illisible sur petit ecran et impossible a rendre lisible.
+  }
+}
+
+pre{
+	font-family: Courier;
+	padding:2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+kbd {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  font-size: 80%;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  line-height: 1em;
+  display: inline;
+  padding: .3em .55em;
+  border-radius: 6px;
+  color: #eeeeee;
+  background-color: #4d4c4c;
+  box-shadow: 0px 2px 0 #000000, 0 3px 1px #999999, inset 0 1px 1px #aaaaaa, inset 0 -1px 3px #272727;
+}
+
+ul{
+		display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+	list-style-type: circle;
+	&.square{
+		list-style-type: square;
+	}
+}
+
+.alignleft{
+	text-align: left;
+}
+
+.alignright{
+	text-align: right;
+}
+
+.aligncenter{
+	text-align: center;
+}
+
+.alignjustify{
+	text-align: justify;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.lowercase{
+	text-transform: lowercase;
+}

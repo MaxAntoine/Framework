@@ -1,0 +1,29 @@
+.main{
+  width: 50%;
+  border: 3px solid $borderMain;
+  border-style: groove;
+  padding-top: 75px;
+  @media screen and (max-width: $mobil){
+    padding-top: 0px;
+    width: auto;
+  }
+}
+
+ .left{
+    padding-top: 75px;
+    width: 25%;
+    @media screen and (max-width: $mobil){
+      display: none;
+    }
+ }
+.case{
+  margin:10px;
+  padding: 1%;
+  border: 2px solid $borderCase;
+  border-radius: 5px;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+}

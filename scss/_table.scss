@@ -1,0 +1,47 @@
+
+
+
+table{
+	font-size: 20px;
+	@media screen and (max-width: $mobil){
+		font-size: 15px;
+	}
+	display: table;
+	width: 100%;
+	border: 2px solid $colorColomn;
+	margin-bottom: 20px;
+	padding: 3px;
+	td, th{
+		border-left: 1px solid black;
+		padding: 3px;
+	}
+
+
+	th{
+		text-align: left;
+		font-weight: bold;
+		border-bottom: 2px solid $colorColomn;
+		padding: 8px;
+	}
+}
+
+.tableBorderBottom{
+	td{
+			border-bottom: 1px solid $colorColomn;
+	}
+}
+
+.tableLineColor{
+	tr:nth-child(2n+2){
+		background-color: $colorTable;
+	}
+}
+
+.tableLineHover{
+	tr:nth-child(2n+2):hover{
+		background-color:darken($colorTable, 10);
+	}
+	tr:nth-child(2n+3):hover{
+		background-color: darken(white,10);
+	}
+}
